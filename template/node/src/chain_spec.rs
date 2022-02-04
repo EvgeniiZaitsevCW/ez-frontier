@@ -192,6 +192,59 @@ fn testnet_genesis(
 						storage: Default::default(),
 					},
 				);
+
+				//HardHat test accounts
+				map.insert(
+					H160::from_str("f39Fd6e51aad88F6F4ce6aB8827279cffFb92266")
+						.expect("internal H160 is valid; qed"),
+					pallet_evm::GenesisAccount {
+						balance: U256::from(2001_000_000_000_000_000_000u128),
+						code: Default::default(),
+						nonce: Default::default(),
+						storage: Default::default(),
+					},
+				);
+				map.insert(
+					H160::from_str("70997970C51812dc3A010C7d01b50e0d17dc79C8")
+						.expect("internal H160 is valid; qed"),
+					pallet_evm::GenesisAccount {
+						balance: U256::from(2002_000_000_000_000_000_000u128),
+						code: Default::default(),
+						nonce: Default::default(),
+						storage: Default::default(),
+					},
+				);
+				map.insert(
+					H160::from_str("3C44CdDdB6a900fa2b585dd299e03d12FA4293BC")
+						.expect("internal H160 is valid; qed"),
+					pallet_evm::GenesisAccount {
+						balance: U256::from(2003_000_000_000_000_000_000u128),
+						code: Default::default(),
+						nonce: Default::default(),
+						storage: Default::default(),
+					},
+				);
+				map.insert(
+					H160::from_str("90F79bf6EB2c4f870365E785982E1f101E93b906")
+						.expect("internal H160 is valid; qed"),
+					pallet_evm::GenesisAccount {
+						balance: U256::from(2004_000_000_000_000_000_000u128),
+						code: Default::default(),
+						nonce: Default::default(),
+						storage: Default::default(),
+					},
+				);
+				map.insert(
+					H160::from_str("15d34AAf54267DB7D7c367839AAf71A00a2C6A65")
+						.expect("internal H160 is valid; qed"),
+					pallet_evm::GenesisAccount {
+						balance: U256::from(2005_000_000_000_000_000_000u128),
+						code: Default::default(),
+						nonce: Default::default(),
+						storage: Default::default(),
+					},
+				);
+
 				map
 			},
 		},
